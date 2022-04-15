@@ -1,0 +1,97 @@
+body {    
+    --color-primary: #003cff;
+    --color-primary-dark: #350391;
+    --color-secondary: #07860d;
+    --color-error: #cc3333;
+    --color-succes: #4bb544;
+    --border-radius: 2px;
+
+    display: grid;
+    grid-template-columns: 25vw 15vw 5vw 15vw 15vw 25vw;
+    grid-template-rows: 10vh 45vh 45vh;
+}
+
+header {
+    padding-left: 75px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+}
+
+li, a, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header, ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    padding-right: 10px;
+}
+
+.menubtn {
+    background-color: var(--color-primary);
+    color: white;
+    padding-left: 42.5px;
+    padding-right: 42.5px;
+    font-size: 16px;
+    border: none;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    padding-bottom: 2.5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.menu-content a {
+    color: var(--color-primary);
+    padding: 12.5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    color: var(--color-primary-dark);
+}
+
+.menu:hover .menu-content {
+    display: block;
+    background-color: #24252a;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+.menu:hover .dropbtn {
+    background-color: var(--color-primary)
+}
+
+button {
+    margin-left: 10px;
+    padding: 4.5px 12.5px;
+    background-color: var(--color-primary-dark);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: var(--color-primary-dark);
+}

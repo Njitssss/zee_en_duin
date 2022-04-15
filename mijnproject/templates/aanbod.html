@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="all_bungalows_container">
+    
+    <div class="data_container">
+        <h1>Mogelijkheden bungalows</h1>
+        <p>Hieronder vind u alle bungalows die wij aanbieden bij zee & duin!</p>
+        <div class="bungalow_container" style="display: flex; flex-direction: column;flex-wrap: wrap;">
+            <a href="/bungalows/3">De Fazant</a>
+            <a href="/bungalows/1"><img src="static/images/bungalow01.jpg" width="674px" class="bungalow_img"></a>
+        </div>
+        <div class="bungalow_container" style="display: flex; flex-direction: column;flex-wrap: wrap;">
+            <a href="/bungalows/3">De Bosuil</a>
+            <a href="/bungalows/2"><img src="static/images/bungalow02.jpg" width="674px" class="bungalow_img"></a>
+        </div>
+        <div class="bungalow_container" style="display: flex; flex-direction: column;flex-wrap: wrap;">
+            <a href="/bungalows/3">De Langooregel</a>
+            <a href="/bungalows/3"><img src="static/images/bungalow03.jpg" width="674px" class="bungalow_img"></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

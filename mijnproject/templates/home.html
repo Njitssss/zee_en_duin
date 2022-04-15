@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %} Hoofdpagina {% endblock %}
+{% block content %}
+<div class="jumbotron">
+    {% if current_user.is_authenticated %}
+    <p>Hallo {{ current_user.username }}!</p>
+    <h5>Onze nieuwste aanbiedingen: <span class="badge bg-secondary">Nieuw</span></h5>
+    {% endif %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="boek_container">
+        <h1>Boeking voor bungalow </h1>
+        <h1 style="left: 50%;">{{ bungalow_name }} </h1>
+        {% if id_wrong %}
+        <p class="w_or_g">{{ id_wrong }}</p>
+        {% else %}
+        <p>{{ week }}</p>
+        <img style="width: 46%;" class="bungalow_details_img" src="../static/bungalow_{{bungalow_id}}_new.jpg" alt="Bungalow-foto">
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <p>{{ form.week.label }} {{form.week}}</p>
+            <p class="w_or_g">{{ w_or_g }}</p>
+            
+            {% for i in datums%}
+                    <p><li>{{i}}</li></p>
+            {% endfor %}
+            
+            <p>{{form.submit}}</p>
+        </form>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
